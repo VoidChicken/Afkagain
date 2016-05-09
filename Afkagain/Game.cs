@@ -12,8 +12,10 @@ namespace Afkagain
     {
         public static Renderer renderer;
         protected GameLogic game;
+        public static Size size;
         public Game() : base(1280, 720)
         {
+            size = Size;
             Resize += Game_Resize;
             RenderFrame += Game_RenderFrame;
             UpdateFrame += Game_UpdateFrame;
